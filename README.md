@@ -1,70 +1,129 @@
-# Getting Started with Create React App
+# Kanban Board
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A simple and interactive Kanban Board application built with React, featuring task management with local storage, drag-and-drop functionality, task searching, sorting, and editing capabilities.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- **Task Management**: Add, edit, delete, and toggle tasks.
+- **Local Storage**: Tasks are persisted in the browser's local storage.
+- **Drag-and-Drop**: Change task status by dragging and dropping between columns.
+- **Search Functionality**: Search tasks by name.
+- **Sorting**: Sort tasks alphabetically within each column.
+- **Responsive Design**: Mobile-friendly user interface.
 
-### `npm start`
+## Installation
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+1. **Clone the Repository**:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+   ```bash
+   git clone https://github.com/yourusername/kanban-board.git
+   cd kanban-board
+   ```
 
-### `npm test`
+2. **Install Dependencies**:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+   ```bash
+   npm install
+   ```
 
-### `npm run build`
+3. **Start the Development Server**:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+   ```bash
+   npm start
+   ```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+4. **Build the Application for Production**:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+   ```bash
+   npm run build
+   ```
 
-### `npm run eject`
+## Project Structure
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+```
+kanban-board/
+├── public/
+│   ├── index.html
+│   └── ...
+├── src/
+│   ├── components/
+│   │   ├── TaskForm.js
+│   │   ├── TaskList.js
+│   │   └── ...
+│   ├── hooks/
+│   │   └── useLocalStorage.js
+│   ├── App.js
+│   ├── index.css
+│   ├── index.js
+│   └── ...
+├── package.json
+├── README.md
+└── ...
+```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Components
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- **TaskForm**: Form to add new tasks.
+- **TaskList**: Displays tasks within a status column (To Do, Ongoing, Completed).
+- **useLocalStorage**: Custom hook for managing state with local storage.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Usage
 
-## Learn More
+1. **Add a Task**: Fill in the task name and due date, then click "Add Task".
+2. **Edit a Task**: Click the "Edit" button on a task, make changes, then click "Save".
+3. **Delete a Task**: Click the "Delete" button on a task.
+4. **Toggle Task Status**: Click the checkbox to mark a task as completed or to do.
+5. **Drag and Drop**: Drag a task to a different column to change its status.
+6. **Search Tasks**: Use the search bar to filter tasks by name.
+7. **Sort Tasks**: Click the "Sort by Name" button to sort tasks alphabetically within each column.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Contributing
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Contributions are welcome! Please follow these steps to contribute:
 
-### Code Splitting
+1. **Fork the Repository**:
+   Click the "Fork" button at the top right of this repository page.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+2. **Create a New Branch**:
 
-### Analyzing the Bundle Size
+   ```bash
+   git checkout -b feature/your-feature-name
+   ```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+3. **Make Your Changes**:
+   Add your changes to the new branch.
 
-### Making a Progressive Web App
+4. **Commit Your Changes**:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+   ```bash
+   git commit -m 'Add some feature'
+   ```
 
-### Advanced Configuration
+5. **Push to the Branch**:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+   ```bash
+   git push origin feature/your-feature-name
+   ```
 
-### Deployment
+6. **Create a Pull Request**:
+   Open a pull request on GitHub.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+## License
 
-### `npm run build` fails to minify
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Acknowledgements
+
+- [React](https://reactjs.org/)
+- [localStorage](https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage)
+
+## Contact
+
+If you have any questions or suggestions, feel free to reach out:
+
+- **Email**: bhargav111.kasundra@gmail.com
+- **GitHub**: bhargav051 https://github.com/bhargav051
+
+---
+
+Thank you for using the Kanban Board application! We hope it helps you stay organized and productive.
